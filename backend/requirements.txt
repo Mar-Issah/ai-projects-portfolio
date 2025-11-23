@@ -1,0 +1,19 @@
+# Core Framework
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+
+
+langchain-openai
+openai
+langchain
+
+# Utilities
+python-dotenv
+numpy
+
+# Code Quality
+black
+isort
+ruff

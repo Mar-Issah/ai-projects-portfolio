@@ -59,18 +59,6 @@ export function Navbar() {
               ) : null}
             </AnimatePresence>
           </DropdownMenu>
-
-          <div className='relative group'>
-            <a
-              href='mailto:masy370@gmail.com'
-              className='text-sm font-medium text-muted-foreground transition hover:text-primary'
-            >
-              Contact
-            </a>
-            <span className='pointer-events-none absolute left-1/2 top-full mt-2 -translate-x-1/2 rounded-2xl border border-border/70 bg-card px-4 py-2 text-xs font-semibold opacity-0 shadow-sm transition-all duration-200 group-hover:pointer-events-auto group-hover:-translate-y-1 group-hover:opacity-100'>
-              masy370@gmail.com
-            </span>
-          </div>
         </nav>
 
         <div className='flex items-center gap-2'>
