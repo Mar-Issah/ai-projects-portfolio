@@ -52,6 +52,20 @@ class Settings(BaseSettings):
         default=None, description="Database connection URL"
     )
 
+    # LangSmith
+    LANGCHAIN_API_KEY: Optional[str] = Field(
+        default=None, description="LangSmith API key"
+    )
+    LANGCHAIN_TRACING_V2: bool = Field(
+        default=True, description="Enable LangSmith tracing"
+    )
+    LANGCHAIN_PROJECT: str = Field(
+        default="ai-projects-portfolio", description="LangSmith project name"
+    )
+    LANGCHAIN_ENDPOINT: Optional[str] = Field(
+        default=None, description="LangSmith endpoint (optional)"
+    )
+
     @property
     def is_development(self) -> bool:
         """Check if running in development mode."""

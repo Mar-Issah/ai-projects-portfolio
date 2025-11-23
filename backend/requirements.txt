@@ -4,10 +4,10 @@ uvicorn
 pydantic
 pydantic-settings
 
-
 langchain-openai
 openai
 langchain
+langsmith  # Add this
 
 # Utilities
 python-dotenv
