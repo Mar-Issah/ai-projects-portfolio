@@ -17,4 +17,3 @@ async def health_check() -> Message:
 async def root() -> Message:
     """Root endpoint."""
     return Message(message="AI Projects Portfolio API")
-

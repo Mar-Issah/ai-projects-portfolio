@@ -3,13 +3,8 @@
 import numpy as np
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from app.models.schemas import (
-    EmbeddingRequest,
-    EmbeddingResponse,
-    Message,
-    SimilarityRequest,
-    SimilarityResponse,
-)
+from app.models.schemas import (EmbeddingRequest, EmbeddingResponse, Message,
+                                SimilarityRequest, SimilarityResponse)
 from app.services.openai_service import OpenAIService, get_openai_service
 
 router = APIRouter(prefix="/embeddings", tags=["Embeddings"])
