@@ -2,12 +2,8 @@
 
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from app.models.schemas import (
-    DocumentUploadRequest,
-    Message,
-    RAGQueryRequest,
-    RAGQueryResponse,
-)
+from app.models.schemas import (DocumentUploadRequest, Message,
+                                RAGQueryRequest, RAGQueryResponse)
 from app.services.rag_service import RAGService, get_rag_service
 from app.utils.exceptions import ValidationException
 

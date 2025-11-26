@@ -2,8 +2,8 @@
 
 from typing import Optional
 
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 from app.config import get_settings
 from app.utils.exceptions import OpenAIException

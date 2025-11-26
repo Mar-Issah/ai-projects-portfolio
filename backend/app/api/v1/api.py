@@ -2,14 +2,8 @@
 
 from fastapi import APIRouter
 
-from app.api.v1.routes import (
-    agent,
-    embeddings,
-    health,
-    rag,
-    text_to_image,
-    tool_agent,
-)
+from app.api.v1.routes import (agent, embeddings, health, rag, text_to_image,
+                               tool_agent)
 
 api_router = APIRouter()
 
@@ -20,4 +14,3 @@ api_router.include_router(agent.router)
 api_router.include_router(embeddings.router)
 api_router.include_router(text_to_image.router)
 api_router.include_router(tool_agent.router)
-
